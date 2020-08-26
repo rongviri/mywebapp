@@ -62,6 +62,25 @@
 	</dependencies>
 	<pluginRepositories>
 		<pluginRepository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</pluginRepository>
+		<pluginRepository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 			<id>central2</id>
 			<name>Central Repository2</name>
 			<url>https://repo1.maven.org/maven2</url>
@@ -72,27 +91,27 @@
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
-<!-- 				https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin -->
-<!-- 				<plugin> -->
-<!-- 					<groupId>org.eclipse.jetty</groupId> -->
-<!-- 					<artifactId>jetty-maven-plugin</artifactId> -->
-<!-- 					<version>9.4.12.v20180830</version> -->
-<!-- 				</plugin> -->
+				<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin -->
+				<!-- <plugin> -->
+				<!-- <groupId>org.eclipse.jetty</groupId> -->
+				<!-- <artifactId>jetty-maven-plugin</artifactId> -->
+				<!-- <version>9.4.12.v20180830</version> -->
+				<!-- </plugin> -->
 
-<!-- 				Default is too old, update to latest to run the latest Spring 5 
+				<!-- Default is too old, update to latest to run the latest Spring 5 
 					+ jUnit 5 -->
-<!-- 				<plugin> -->
-<!-- 					<groupId>org.apache.maven.plugins</groupId> -->
-<!-- 					<artifactId>maven-surefire-plugin</artifactId> -->
-<!-- 					<version>2.22.0</version> -->
-<!-- 				</plugin> -->
+				<!-- <plugin> -->
+				<!-- <groupId>org.apache.maven.plugins</groupId> -->
+				<!-- <artifactId>maven-surefire-plugin</artifactId> -->
+				<!-- <version>2.22.0</version> -->
+				<!-- </plugin> -->
 
-<!-- 				Default 2.2 is too old, update to latest -->
-<!-- 				<plugin> -->
-<!-- 					<groupId>org.apache.maven.plugins</groupId> -->
-<!-- 					<artifactId>maven-war-plugin</artifactId> -->
-<!-- 					<version>3.2.2</version> -->
-<!-- 				</plugin> -->
+				<!-- Default 2.2 is too old, update to latest -->
+				<!-- <plugin> -->
+				<!-- <groupId>org.apache.maven.plugins</groupId> -->
+				<!-- <artifactId>maven-war-plugin</artifactId> -->
+				<!-- <version>3.2.2</version> -->
+				<!-- </plugin> -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
@@ -100,7 +119,7 @@
 				<!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.0.2</version>
+					<version>3.1.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
